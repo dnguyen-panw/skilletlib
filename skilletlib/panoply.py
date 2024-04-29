@@ -891,6 +891,10 @@ class Panoply:
         elif "10" in version:
             skillet_dir = "baseline_91"
 
+        # catch-all for future 11.x versions
+        elif "11" in version:
+            skillet_dir = "baseline_91"
+
         else:
             raise PanoplyException("Could not determine sw-version for baseline load")
 
